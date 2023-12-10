@@ -3,7 +3,6 @@
 console.log('Matvey');
 // Task 2.
 // Выведите в консоль номер месяца в котором вы родились. Изучите чем отличается вывод числа и строки.
-
 let monthOfBirth = 6;
 console.log(monthOfBirth);
 
@@ -29,11 +28,13 @@ document.getElementById('six').innerHTML = 'Hello world';
 
 // Task 7.
 // На странице создан div#seven. С помощью document.getElementById запишите в данный элемент результат умножения 12 на 12. Умножение можно сделать с помощью знака звездочки ( shift + 8).
-document.getElementById('seven').innerHTML = '12 * 12';
+let result = 12 * 12;
+let element = document.getElementById("seven");
 
 // Task 8.
 // На странице создан div.out-8. С помощью document.querySelector запишите в данный элемент текст 'task-8'. 
-document.querySelector('.out-8').innerHTML = 'task-8';
+let element1 = document.querySelector('.out-8');
+element.innerText = 'task-8';
 
 // Task 9.
 // На странице созданa верстка :
@@ -41,12 +42,13 @@ document.querySelector('.out-8').innerHTML = 'task-8';
 // Замените с помощью querySelector текст внутри span на 'world'.
 // Т.е. результат должен выглядеть <h2>Hello <span class="out-8">world</span></h2>
 document.querySelector('.out-8').innerHTML = 'world';
+spanElement.innerText = "world";
 
 // Task 10.
 //На странице создан div.out-10. С помощью innerHTML запишите внутрь него следующую строку '<h2>Hi</h2>'.
 
-document.getElementById('.out-10').innerHTML = '<h2>Hi</h2>';
-
+let element2 = document.querySelector('.out-10');
+element.innerHTML = '<h2>Hi</h2>';
 // Task 11.
 // На странице создан div.out-11. Запишите внутрь него строку '123'. Для записи используйте innerHTML. Второй операцией - допишите в div.out-11 строку '456'. Для дозаписи примените +=. Обратите внимание - код уже набран, вам нужно удалить комментарий и изучить принцип работы. 
 
@@ -54,7 +56,6 @@ document.getElementById('.out-10').innerHTML = '<h2>Hi</h2>';
 
 document.querySelector('.out-11').innerHTML = '123';
 document.querySelector('.out-11').innerHTML += '456';
-
 
 
 
@@ -102,12 +103,11 @@ out16.innerHTML = x1 + x2;
 
 
 let out17 = document.querySelector('.out-17');
-console.log(out17);
 console.dir(out - 17);
 
 // Task 18.
 // Получите div.out-18 в переменную out18. Выведите эту переменную в консоль. Присвойте out18 значение 5 (out18 = 5). Выведите переменную в консоль. Изучите вывод.
-const out18 = document.querySelector('div.out-18');
+let out18 = document.querySelector('div.out-18');
 console.log(out18);
 
 out18 = 5;
